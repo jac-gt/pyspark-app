@@ -73,4 +73,4 @@ To submit it to a cluster give the proper master url and other options
 
 ## Important
 
-Please note that the host folder and docker folder /app is mapped using docker volume. To delete the files which are created from the docker container you will need sudo access.
+Please note that the host folder and docker container folder /app is mapped using docker volume. To delete the files which are created from the docker container you will need sudo access.
