@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  pyspark-dev:
+    environment:
+      - PYTHONPATH=./src
+    image: "pyspark-image"
+    volumes:
+      - ./../dist:/app
+    command: tail -f /dev/null
+#    command: spark-submit --master local[8] --py-files jobs.zip --files config.json main.py

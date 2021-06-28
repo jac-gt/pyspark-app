@@ -1,0 +1,5 @@
+{
+  "app_name": "Anonymizer App",
+  "source_data_path": "data/input",
+  "output_data_path": "data/output"
+}

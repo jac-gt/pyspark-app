@@ -1,0 +1,7 @@
+*.idea/
+*__pycache__/
+*tests/.pytest_cache
+*tests/test_data_output/
+*.iml*
+*test_data_output/
+*dist
