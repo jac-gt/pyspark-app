@@ -3,7 +3,7 @@
 This pyspark app is to anonymize first_name, last_name, address, date_of_birth of an input(people.csv) CSV file.
 The first_name and last_name is anonymized using soundex function and the address is replaced with xxxxx.
 
-##Configuration
+## Configuration
 The application needs a config file(config.json) which gives the location of the input CSV file and the output location for the anonymized file
 ```
 {
@@ -12,7 +12,7 @@ The application needs a config file(config.json) which gives the location of the
 "output_data_path": "data/output"
 }
 ```
-##Running the code in a docker container
+## Running the code in a docker container
 A docker container is used to run the code and test it. To create it the make tool is used. The docker container will have pyspark and pytest. The host folder dist is mapped to the docker container folder /app
 
 ```
@@ -35,7 +35,7 @@ Starting <container_name> ... done
 Attaching to <container_name>
 ```
 
-##Running Tests
+## Running Tests
 Pytest is used to test the code. To run the test cases first run the docker container by running make. This will build the docker image with pyspark and pytest. It will then create the docker container
 
 Connect to the docker container by running 
@@ -62,7 +62,7 @@ return f(*args, **kwds)
 -- Docs: https://docs.pytest.org/en/stable/warnings.html
 =========================================================== 3 passed, 1 warning in 14.34s ============================================================
 ```
-##Running the anonymizer
+## Running the anonymizer
 
 To run the anonymizer in the container you can use the following:
 ```
